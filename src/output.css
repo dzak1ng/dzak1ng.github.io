@@ -682,6 +682,9 @@
   .underline {
     text-decoration-line: underline;
   }
+  .opacity-10 {
+    opacity: 10%;
+  }
   .opacity-20 {
     opacity: 20%;
   }
