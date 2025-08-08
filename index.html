@@ -1,202 +1,247 @@
 
 <!DOCTYPE html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PKBM MC CENDEKIA</title>
-  <link rel="icon" type="image/png" href="img/Logo.png">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="./src/output.css" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Archivo', sans-serif; }
-  </style>
-</head>
-<body class="bg-gray-100 text-gray-900">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PKBM MC CENDEKIA</title>
+    <link rel="icon" type="image/png" href="img/Logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Archivo', sans-serif; }
+    </style>
+  </head>
+  <body class="bg-[#FFFCF3] text-black text-lg">
 
-  <!-- Header -->
+    <!-- Header -->
 
-  <header class="bg-[#453B3A] text-white">
-    <div class="max-w-5xl mx-auto px-12 py-7 flex items-center justify-between">
-      <!-- Logo -->
-      <div class="flex items-center space-x-3">
-        <a href="#"><img src="img/Logo Header Transparan.png" alt="Logo PKBM" class="max-h-12 w-auto"></a>
-      </div>
-
-      <!-- Hamburger Button (Mobile) -->
-      <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
-        ☰
-      </button>
-
-      <!-- Navigation Menu (Desktop) -->
-      <nav class="hidden md:flex items-center space-x-7 text-sm">
-        <a href="#" class="text-white font-bold hover:text-orange-200 first:mr-0">Beranda</a>
-        <a href="#tentang" class="hover:text-orange-200">Tentang Kami</a>
-        <a href="#program" class="hover:text-orange-200">Program</a>
-        <a href="#pendaftaran" class="hover:text-orange-200">Pendaftaran</a>
-        <a href="#galeri" class="hover:text-orange-200">Galeri</a>
-        <a href="#kontak" class="hover:text-orange-200">Kontak</a>
-      </nav>
-    </div>
-
-    <!-- Mobile Menu -->
-    <div id="mobile-menu" class="md:hidden px-12 pb-8 space-y-4 text-sm hidden">
-      <a href="#" class="block text-white font-bold hover:text-orange-200">Beranda</a>
-      <a href="#tentang" class="block hover:text-orange-200">Tentang Kami</a>
-      <a href="#program" class="block hover:text-orange-200">Program</a>
-      <a href="#pendaftaran" class="block hover:text-orange-200">Pendaftaran</a>
-      <a href="#galeri" class="block hover:text-orange-200">Galeri</a>
-      <a href="#kontak" class="block hover:text-orange-200">Kontak</a>
-    </div>
-  </header>
-
-
-  <!-- Hero Section -->
-  <section class="relative bg-cover bg-center" style="background-image: url('./img/Foto Beranda.png');">
-    <!-- Overlay -->
-    <div class="absolute inset-0 bg-black opacity-50"></div>
-
-    <!-- Konten -->
-    <div class="relative z-10 max-w-1xl mx-auto text-center py-20 text-white">
-      <h1 class="text-5xl md:text-5xl px-5" style="font-family: 'Fugaz One', sans-serif;">Selamat Datang di PKBM MC CENDEKIA</h1>
-      <p class="mt-5 text-xl px-5" style="font-family: 'Fugaz One', sans-serif;">"Belajar Sepanjang Hayat, Mengabdi Sepenuh Hati, Menjadi Pribadi Cendekia Berakhlak Islami."</p>
-      <p class="mt-10 px-10">PKBM MC CENDEKIA adalah lembaga pendidikan alternatif berbasis Islam yang hadir di Jl. KI Anwar Mangku, Lrg Sunia No. 120 RT 036 RW 013, Kel. Plaju Ulu, Plaju-Palembang, untuk membuka akses pendidikan bagi seluruh lapisan masyarakat Indonesia. Dengan pendekatan blended learning dan semangat pembelajaran sepanjang hayat, kami berkomitmen mendampingi setiap peserta didik tumbuh menjadi pribadi yang cerdas, berkarakter, dan berakhlak mulia.</p>
-      <!-- Tombol -->
-      <div class="flex justify-center gap-6 mt-8">
-        <a href="#tentang" class="bg-[#ffffff] text-[#453B3A] font-semibold py-3 px-8 rounded-full hover:bg-orange-200 transition duration-300 ease-in-out">
-          Tentang Kami
-        </a>
-        <a href="https://wa.me/6281379219322?text=Halo%2C%20saya%20ingin%20mendaftar%20di%20PKBM%20MC%20CENDEKIA" 
-          class="bg-[#ffffff] text-[#453B3A] font-semibold py-3 px-8 rounded-full hover:bg-orange-200 transition duration-300 ease-in-out">
-          Hubungi Kami
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Visi Kami -->
-<section class="py-20 bg-gray-100 text-center md:text-left" id="tentang">
-  <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8 px-6 justify-center">
-    <!-- Gambar -->
-    <div class="w-full md:w-1/2 max-w-sm">
-      <img src="img/Beranda/Vision.png" alt="Visi Kami" class="w-full h-auto rounded-lg shadow-md">
-    </div>
-    <!-- Teks Visi Kami -->
-    <div class="w-full md:w-1/2 text-black">
-      <h2 class="text-3xl font-bold mb-4">Visi Kami</h2>
-      <p class="text-lg text-justify">“Menjadi pusat pendidikan alternatif unggulan yang menjangkau seluruh lapisan masyarakat Indonesia, membentuk insan yang berpikir kritis, kreatif, kolaboratif, komunikatif, berkarakter mulia, dan berlandaskan nilai-nilai Islam.”</p>
-    </div>
-  </div>
-</section>
-
-<!-- Program Unggulan Kami -->
-<section class="py-20" id="program">
-  <h2 class="text-3xl font-bold text-center mb-8">Program Unggulan Kami</h2>
-  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-    <div class="bg-white p-6 shadow-lg rounded-lg text-center">
-      <h3 class="text-lg font-semibold">Playgroup & TK</h3>
-      <p>Belajar sambil bermain penuh nilai Islami</p>
-    </div>
-    <div class="bg-white p-6 shadow-lg rounded-lg text-center">
-      <h3 class="text-lg font-semibold">Paket A</h3>
-      <p>Pendidikan dasar setara SD</p>
-    </div>
-    <div class="bg-white p-6 shadow-lg rounded-lg text-center">
-      <h3 class="text-lg font-semibold">Paket B</h3>
-      <p>Pendidikan menengah setara SMP</p>
-    </div>
-    <div class="bg-white p-6 shadow-lg rounded-lg text-center">
-      <h3 class="text-lg font-semibold">Paket C</h3>
-      <p>Pendidikan setara SMA, siap kuliah & kerja</p>
-    </div>
-  </div>
-</section>
-
-<!-- Mengapa Memilih Kami -->
-<section class="py-20 bg-gray-100 text-center">
-  <h2 class="text-3xl font-bold">Mengapa Memilih Kami?</h2>
-  <div class="max-w-2xl mx-auto mt-8">
-    <ul class="list-disc text-left text-lg text-gray-700">
-      <li>Berbasis nilai-nilai Islam</li>
-      <li>Pembelajaran blended learning adaptif</li>
-      <li>Akses terbuka untuk semua, termasuk wilayah 3T</li>
-      <li>Penerapan budaya mutu 5C: Critical Thinking, Creativity, Collaboration, Communication, Character</li>
-      <li>Lingkungan inklusif & ramah anak</li>
-      <li>Fasilitas nyaman, e-learning, dan perpustakaan Islami</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Cara Mendaftar -->
-<section class="py-20 text-center" id="pendaftaran">
-  <h2 class="text-3xl font-bold">Cara Mendaftar</h2>
-  <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-700">Mudah & cepat! Pendaftaran bisa dilakukan secara langsung atau online.</p>
-  <a href="#daftar" class="bg-[#4b403f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#6c564c] transition duration-300 ease-in-out mt-8 inline-block">
-    Daftar Sekarang
-  </a>
-</section>
-
-  <!-- Footer -->
-  <footer class="bg-[#453B3A] text-white">
-    <div class="max-w-7xl mx-auto px-12 py-8 flex flex-col md:flex-row md:justify-between md:items-center gap-8">
-
-      <!-- Logo -->
-      <div class="flex justify-center md:justify-start mb-4 md:mb-0">
-        <img src="img/Logo.png" alt="Logo PKBM" class="w-28 h-28 object-contain">
-      </div>
-
-      <!-- Alamat dan Kontak -->
-      <div class="flex flex-col items-center md:items-start">
-        <h3 class="font-bold mb-2">Alamat dan Kontak</h3>
-        <ul class="space-y-1 text-sm text-center md:text-left">
-          <li>Jl. KI Anwar Mangku, Lrg Sunia No. 120 RT 036 RW 013, Kel. Plaju Ulu, Palembang</li>
-          <li>WhatsApp Admin: (+62)813-7921-9322</li>
-          <li>pkbmccendekia@gmail.com</li>
-        </ul>
-      </div>
-
-      <!-- Ikuti Kami di Sosial Media -->
-      <div class="flex flex-col items-center md:items-start">
-        <h3 class="font-bold mb-2">Ikuti Kami di Sosial Media</h3>
-        
-        <div class="flex space-x-4 text-2xl">
-          <a href="https://instagram.com/dzak1ng" class="hover:text-gray-300 first:mr-0"><img src="img/icon/instagram.png" alt="Instagram" class="w-6 h-6"></a>
-          <a href="https://instagram.com/dzak1ng" class="hover:text-gray-300"><img src="img/icon/youtube.png" alt="YouTube" class="w-6 h-6"></a>
-          <a href="https://instagram.com/dzak1ng" class="hover:text-gray-300"><img src="img/icon/x.png" alt="Twitter" class="w-6 h-6"></a>
-          <a href="https://instagram.com/dzak1ng" class="hover:text-gray-300"><img src="img/icon/linkedin.png" alt="LinkedIn" class="w-6 h-6"></a>
-          <a href="https://instagram.com/dzak1ng" class="hover:text-gray-300"><img src="img/icon/tiktok.png" alt="TikTok" class="w-6 h-6"></a>
-          <a href="https://instagram.com/dzak1ng" class="hover:text-gray-300"><img src="img/icon/facebook.png" alt="Facebook" class="w-6 h-6"></a>
+    <header class="bg-[#453B3A] text-white">
+      <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-12 py-7 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center space-x-3">
+          <a href="#"><img src="img/Logo Header Transparan.png" alt="Logo PKBM" class="max-h-12 w-auto"></a>
         </div>
 
-        <a href="https://wa.me/6281379219322?text=Halo%2C%20saya%20ingin%20mendaftar%20di%20PKBM%20MC%20CENDEKIA" 
-        class="bg-[#ffffff] text-[#6c564c] font-semibold py-2 px-6 rounded-full hover:bg-orange-200 transition duration-300 ease-in-out mt-4">
-        Klik Untuk Chat Admin
-          </a>
+        <!-- Hamburger Button (Mobile) -->
+        <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
+          ☰
+        </button>
+
+        <!-- Navigation Menu (Desktop) -->
+        <nav class="hidden md:flex items-center space-x-7 text-sm">
+          <a href="#" class="text-white font-bold hover:text-orange-200 first:mr-0">Beranda</a>
+          <a href="#tentang" class="hover:text-orange-200">Tentang Kami</a>
+          <a href="#program" class="hover:text-orange-200">Program</a>
+          <a href="#pendaftaran" class="hover:text-orange-200">Pendaftaran</a>
+          <a href="#galeri" class="hover:text-orange-200">Galeri</a>
+          <a href="#kontak" class="hover:text-orange-200">Kontak</a>
+        </nav>
       </div>
 
-    </div>
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden px-8 py-8 space-y-6 text-sm hidden bg-[#312b29] text-white">
+        <a href="#" class="block text-white font-bold hover:text-orange-200">Beranda</a>
+        <a href="#tentang" class="block hover:text-orange-200">Tentang Kami</a>
+        <a href="#program" class="block hover:text-orange-200">Program</a>
+        <a href="#pendaftaran" class="block hover:text-orange-200">Pendaftaran</a>
+        <a href="#galeri" class="block hover:text-orange-200">Galeri</a>
+        <a href="#kontak" class="block hover:text-orange-200">Kontak</a>
+      </div>
+    </header>
 
-    <!-- Copyright -->
-    <div class="bg-black text-center py-3 text-sm">
-      © PKBM MC CENDEKIA 2025
-    </div>
-  </footer>
 
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center" style="background-image: url('./img/Foto Beranda.png');">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
 
-  <!-- JavaScript for Mobile Menu Toggle -->
+      <!-- Konten -->
+      <div class="relative z-10 max-w-1xl mx-auto text-center py-32 text-white">
+        <h1 class="text-5xl md:text-5xl px-5" style="font-family: 'Fugaz One', sans-serif;">Selamat Datang di PKBM MC CENDEKIA</h1>
+        <p class="mt-5 text-xl px-5 pb-4" style="font-family: 'Fugaz One', sans-serif;">"Belajar Sepanjang Hayat, Mengabdi Sepenuh Hati, Menjadi Pribadi Cendekia Berakhlak Islami."</p>
+        <p class="mt-10 px-8 md:px-32 lg:px-48 pb-4">PKBM MC CENDEKIA adalah lembaga pendidikan alternatif berbasis Islam yang hadir di Jl. KI Anwar Mangku, Lrg Sunia No. 120 RT 036 RW 013, Kel. Plaju Ulu, Plaju-Palembang, untuk membuka akses pendidikan bagi seluruh lapisan masyarakat Indonesia. Dengan pendekatan blended learning dan semangat pembelajaran sepanjang hayat, kami berkomitmen mendampingi setiap peserta didik tumbuh menjadi pribadi yang cerdas, berkarakter, dan berakhlak mulia.</p>
+        <!-- Tombol -->
+        <div class="flex justify-center gap-6 mt-8">
+          <a href="#tentang" class="bg-[#ffffff] text-[#453B3A] font-semibold py-3 px-8 rounded-full hover:bg-orange-200 transition duration-300 ease-in-out">
+            Tentang Kami
+          </a>
+          <a href="https://wa.me/6281379219322?text=Halo%2C%20saya%20ingin%20mendaftar%20di%20PKBM%20MC%20CENDEKIA" 
+            class="bg-[#ffffff] text-[#453B3A] font-semibold py-3 px-8 rounded-full hover:bg-orange-200 transition duration-300 ease-in-out">
+            Hubungi Kami
+          </a>
+        </div>
+      </div>
+    </section>
 
-  <script>
-    const toggleBtn = document.getElementById('menu-toggle');
-    const mobileMenu = document.getElementById('mobile-menu');
+    <!-- Visi Kami -->
+    <section class="py-20 text-center md:text-center" id="tentang">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-8 px-8 md:px-32 lg:px-48">
+        <!-- Teks Visi Kami -->
+        <div class="w-full text-black">
+          <h2 class="text-3xl font-bold mb-4">Visi Kami</h2>
+          <p>“Menjadi pusat pendidikan alternatif unggulan yang menjangkau seluruh lapisan masyarakat Indonesia, membentuk insan yang berpikir kritis, kreatif, kolaboratif, komunikatif, berkarakter mulia, dan berlandaskan nilai-nilai Islam.”</p>
+        </div>
+      </div>
+    </section>
 
-    toggleBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
-</body>
+    <!-- Program Unggulan Kami -->
+    <section class=" px-20 py-20 text-center" id="program">
+      <h2 class="text-3xl font-bold">Program Unggulan Kami</h2>
+      <p class="mt-8 mb-8">Semua program didukung pendidikan karakter Islam dan metode belajar online & offline (blended).</p>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
+        
+        <!-- Card 1 -->
+        <div class="bg-white shadow-lg shadow-gray-500 rounded-lg overflow-hidden relative">
+          <div class="relative">
+            <img src="img/Beranda/PGTK.png" alt="Playgroup & TK" class="w-full h-48 object-cover">
+            <!-- Fading effect at the bottom of the image -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-lg text-left px-2 mt-2">Playgroup & TK</h3>
+            <p class="text-sm text-left px-2 my-4">Belajar sambil bermain penuh nilai Islami</p>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bg-white shadow-lg shadow-gray-500 rounded-lg overflow-hidden relative">
+          <div class="relative">
+            <img src="img/Beranda/Paket A.png" alt="Paket A" class="w-full h-48 object-cover">
+            <!-- Fading effect at the bottom of the image -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-lg text-left px-2 mt-2">Paket A</h3>
+            <p class="text-sm text-left px-2 my-4">Pendidikan dasar setara SD</p>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bg-white shadow-lg shadow-gray-500 rounded-lg overflow-hidden relative">
+          <div class="relative">
+            <img src="img/Beranda/Paket B.png" alt="Paket B" class="w-full h-48 object-cover">
+            <!-- Fading effect at the bottom of the image -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-lg text-left px-2 mt-2">Paket B</h3>
+            <p class="text-sm text-left px-2 my-4">Pendidikan menengah setara SMP</p>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bg-white shadow-lg shadow-gray-500 rounded-lg overflow-hidden relative">
+          <div class="relative">
+            <img src="img/Beranda/Paket C.png" alt="Paket C" class="w-full h-48 object-cover">
+            <!-- Fading effect at the bottom of the image -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50"></div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-lg text-left px-2 mt-2">Paket C</h3>
+            <p class="text-sm text-left px-2 my-4">Pendidikan setara SMA, siap kuliah & kerja</p>
+          </div>
+        </div>
+        
+      </div>
+      <p class="mt-8">Semua program didukung pendidikan karakter Islam dan metode belajar online & offline (blended).</p>
+    </section>
+
+    <!-- Mengapa Memilih Kami -->
+    <section class="py-20 text-center">
+      <h2 class="text-3xl font-bold">Mengapa Memilih Kami?</h2>
+      <div class="max-w-2xl mx-auto mt-8 px-8">
+        <ul class="list-disc text-left text-lg text-gray-700">
+          <li>Berbasis nilai-nilai Islam</li>
+          <li>Pembelajaran blended learning adaptif</li>
+          <li>Akses terbuka untuk semua, termasuk wilayah 3T</li>
+          <li>Penerapan budaya mutu 5C: Critical Thinking, Creativity, Collaboration, Communication, Character</li>
+          <li>Lingkungan inklusif & ramah anak</li>
+          <li>Fasilitas nyaman, e-learning, dan perpustakaan Islami</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Cara Mendaftar -->
+    <section class="py-20 text-center" id="pendaftaran">
+      <h2 class="text-3xl font-bold">Cara Mendaftar</h2>
+      <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-700 px-8">Mudah & cepat! Pendaftaran bisa dilakukan secara langsung atau online.</p>
+      <a href="#PENDAFTARAN" class="bg-[#4b403f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#6c564c] transition duration-300 ease-in-out mt-8 inline-block">
+        Informasi Pendaftaran
+      </a>
+    </section>
+
+    <!-- Ayo Bergabung! -->
+    <section class="py-20 text-center" id="pendaftaran">
+      <h2 class="text-3xl font-bold">Ayo Bergabung!</h2>
+      <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-700 px-8">Mari bersama kami wujudkan cita-cita mulia mencerdaskan kehidupan bangsa dengan pendidikan yang inklusif, bernilai, dan penuh keikhlasan.</p>
+      <p class="mt-4 max-w-3xl mx-auto text-lg text-gray-700">Ingin tanya-tanya dulu?</p>
+      <p class="max-w-3xl mx-auto text-lg text-gray-700">Klik tombol dibawah</p>
+      <a href="https://wa.me/6281379219322?text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20PKBM%20MC%20CENDEKIA" class="bg-[#4b403f] text-white font-semibold py-3 px-8 rounded-full hover:bg-[#6c564c] transition duration-300 ease-in-out mt-8 inline-block">
+        Hubungi Kami
+      </a>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#453B3A] text-white">
+      <div class="max-w-7xl mx-auto px-12 py-8 flex flex-col md:flex-row md:justify-between md:items-center gap-8">
+
+        <!-- Logo -->
+        <div class="flex justify-center md:justify-start mb-4 md:mb-0">
+          <img src="img/Logo.png" alt="Logo PKBM" class="w-28 h-28 object-contain">
+        </div>
+
+        <!-- Alamat dan Kontak -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="font-bold mb-2">Alamat dan Kontak</h3>
+          <ul class="space-y-1 text-sm text-center md:text-left">
+            <li>Jl. KI Anwar Mangku, Lrg Sunia No. 120 RT 036 RW 013, Kel. Plaju Ulu, Palembang</li>
+            <li>WhatsApp Admin: (+62)813-7921-9322</li>
+            <li>pkbmccendekia@gmail.com</li>
+          </ul>
+        </div>
+
+        <!-- Ikuti Kami di Sosial Media -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="font-bold mb-2">Ikuti Kami di Sosial Media</h3>
+          
+          <div class="flex space-x-4 text-2xl">
+            <a href="https://instagram.com/dzak1ng" class="hover:bg-black first:mr-0"><img src="img/icon/instagram.png" alt="Instagram" class="w-6 h-6"></a>
+            <a href="https://instagram.com/dzak1ng" class="hover:bg-black"><img src="img/icon/youtube.png" alt="YouTube" class="w-6 h-6"></a>
+            <a href="https://instagram.com/dzak1ng" class="hover:bg-black"><img src="img/icon/x.png" alt="Twitter" class="w-6 h-6"></a>
+            <a href="https://instagram.com/dzak1ng" class="hover:bg-black"><img src="img/icon/linkedin.png" alt="LinkedIn" class="w-6 h-6"></a>
+            <a href="https://instagram.com/dzak1ng" class="hover:bg-black"><img src="img/icon/tiktok.png" alt="TikTok" class="w-6 h-6"></a>
+            <a href="https://instagram.com/dzak1ng" class="hover:bg-black"><img src="img/icon/facebook.png" alt="Facebook" class="w-6 h-6"></a>
+          </div>
+
+          <a href="https://wa.me/6281379219322?text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20PKBM%20MC%20CENDEKIA" 
+          class="bg-[#ffffff] text-[#6c564c] font-semibold py-2 px-6 rounded-full hover:bg-orange-200 transition duration-300 ease-in-out mt-4">
+          Klik Untuk Chat Admin
+            </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="bg-black text-center py-3 text-sm">
+        © PKBM MC CENDEKIA 2025
+      </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+
+    <script>
+      const toggleBtn = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      toggleBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
 </html>
