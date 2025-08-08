@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PKBM MC CENDEKIA</title>
+    <link rel="icon" type="image/png" href="img/Logo.png">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: 'Archivo', sans-serif; }
+    </style>
+  </head>
+  <body class="bg-[#FFFFFF] text-black text-lg">
+
+    <!-- Header -->
+
+    <header class="bg-[#453B3A] text-white">
+      <div class="max-w-5xl mx-auto px-4 md:px-6 lg:px-12 py-7 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex items-center space-x-3">
+          <a href="#"><img src="img/Logo Header Transparan.png" alt="Logo PKBM" class="max-h-12 w-auto"></a>
+        </div>
+
+        <!-- Hamburger Button (Mobile) -->
+        <button id="menu-toggle" class="md:hidden text-white text-2xl focus:outline-none">
+          ☰
+        </button>
+
+        <!-- Navigation Menu (Desktop) -->
+        <nav class="hidden md:flex items-center space-x-7 text-sm">
+          <a href="index.html" class="hover:text-orange-200 first:mr-0">Beranda</a>
+          <a href="#" class="text-white font-bold hover:text-orange-200">Tentang Kami</a>
+          <a href="program.html" class="hover:text-orange-200">Program</a>
+          <a href="pendaftaran.html" class="hover:text-orange-200">Pendaftaran</a>
+          <a href="galeri.html" class="hover:text-orange-200">Galeri</a>
+          <a href="kontak.html" class="hover:text-orange-200">Kontak</a>
+        </nav>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="md:hidden px-8 py-8 space-y-6 text-sm hidden bg-[#312b29] text-white">
+        <a href="index.html" class="block hover:text-orange-200">Beranda</a>
+        <a href="#" class="block text-white font-bold hover:text-orange-200">Tentang Kami</a>
+        <a href="program.html" class="block hover:text-orange-200">Program</a>
+        <a href="pendaftaran.html" class="block hover:text-orange-200">Pendaftaran</a>
+        <a href="galeri.html" class="block hover:text-orange-200">Galeri</a>
+        <a href="kontak.html" class="block hover:text-orange-200">Kontak</a>
+      </div>
+    </header>
+
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center" style="background-image: url('./img/Foto Beranda.png');">
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black opacity-50"></div>
+
+      <!-- Konten -->
+      <div class="relative z-10 max-w-1xl mx-auto text-left px-12 md:px-16 lg:px-32 py-24 text-white">
+        <p class="mt-5 text-4xl pb-8" style="font-family: 'Fugaz One', sans-serif;">"Belajar Sepanjang Hayat, Mengabdi Sepenuh Hati, Menjadi Pribadi Cendekia Berakhlak Islami."</p>
+        <h1 class="text-5xl md:text-5xl" style="font-family: 'Fugaz One', sans-serif;">Siapa Kami?</h1>
+        <p class="mt-10 text-justify">PKBM MC CENDEKIA adalah lembaga pendidikan nonformal berbasis Islam yang hadir sebagai alternatif solusi bagi masyarakat Indonesia yang tidak memiliki akses terhadap pendidikan formal. Berdiri di bawah naungan Yayasan Muji Cahya Cendekia, lembaga ini berkomitmen menjadi mitra utama masyarakat dalam mencerdaskan kehidupan bangsa dengan pendekatan pendidikan yang inklusif, fleksibel, dan bernilai spiritual.</p>
+        <p class="mt-10 text-justify">Berlokasi di Jl. KI Anwar Mangku, Lrg Sunia No. 120 RT 036 RW 013, Kel. Plaju Ulu, Plaju-Palembang, PKBM ini menyelenggarakan program pendidikan dari jenjang usia dini hingga setara SMA melalui perpaduan antara kurikulum nasional, teknologi pembelajaran modern, dan nilai-nilai Islam yang menjadi fondasi utama dalam pembentukan karakter peserta didik.</p>
+      </div>
+    </section>
+
+    <!-- Pendiri Kami -->
+    <section class="lg:px-32 py-20 text-center md:text-left" id="pendiri">
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-col lg:flex-row items-center lg:items-start gap-24 px-6">
+        <!-- Card 1 -->
+        <div class="bg-white shadow-lg shadow-gray-500 rounded-lg overflow-hidden relative max-w-xs">
+          <div class="relative">
+            <img src="img/Tentang Kami/muji g.png" alt="Muji Gunarto" class="w-full h-80 object-cover">
+            <!-- Fading effect at the bottom of the image -->
+            <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-10"></div>
+          </div>
+          <div class="p-4">
+            <h3 class="font-semibold text-lg text-left px-2 mt-2">Dr. Muji Gunarto, S.Si., M.Si.</h3>
+            <p class="text-sm text-left px-2 my-4">Pendiri PKBM MC CENDEKIA, Dosen dan Peneliti dari Universitas Sriwijaya</p>
+          </div>
+        </div>
+        
+        <!-- Teks Pendiri Kami -->
+        <div class="w-full md:w-2/3 px-6 md:px-0 lg:px-0">
+          <h2 class="text-3xl font-bold mb-8">Pendiri Kami</h2>
+          <p class="text-lg mb-4 text-justify">PKBM MC CENDEKIA didirikan oleh Dr. Muji Gunarto, S.Si., M.Si., seorang pendidik, dosen, dan penggiat pendidikan yang memiliki kepedulian mendalam terhadap kondisi pendidikan di Indonesia. Beliau melihat bahwa masih banyak masyarakat, terutama di wilayah marginal, yang belum terlayani oleh sistem pendidikan formal karena keterbatasan usia, waktu, lokasi, atau kondisi sosial ekonomi.</p>
+          <p class="text-lg text-justify">Dengan semangat pengabdian dan nilai keikhlasan, beliau menghadirkan lembaga ini sebagai wadah pembelajaran yang tidak hanya mendidik secara intelektual, tetapi juga menanamkan akhlak mulia dan spiritualitas dalam setiap proses pendidikan.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <section class="px-6 py-20 bg-gray-100 text-center">
+      <!-- Visi Kami -->
+      <h2 class="text-3xl font-bold mb-8">Visi Kami</h2>
+      <p class="text-lg max-w-2xl mx-auto text-gray-700">“Menjadi pusat pendidikan alternatif unggulan yang menjangkau seluruh lapisan masyarakat Indonesia, membentuk insan yang berpikir kritis, kreatif, kolaboratif, komunikatif, berkarakter mulia, dan berlandaskan nilai-nilai Islam.”</p>
+    </section>
+
+    <section class="px-6 py-20 bg-gray-100 text-center">
+      <!-- Misi Kami -->
+      <h2 class="text-3xl font-bold mb-8">Misi Kami</h2>
+      <ul class="list-disc text-lg max-w-2xl mx-auto text-gray-700 space-y-2 text-justify">
+        <li>Menyelenggarakan pendidikan usia dini dan dasar secara tetap muka dengan pendekatan aktif, humanis, dan Islami.</li>
+        <li>Menyediakan layanan pendidikan mengenal secara blended learning (online & offline) yang menjangkau peserta didik di berbagai daerah.</li>
+        <li>Mengintegrasikan nilai-nilai Islam dalam seluruh aktivitas pendidikan, seperti kejujuran, kedisiplinan, kerja keras, tanggung jawab, dan prinsip keilmuan.</li>
+        <li>Meningkatkan kompetensi pendidik dalam hal pedagogik, teknologi, dan spiritualitas.</li>
+        <li>Menumbuhkan semangat belajar sepanjang hayat yang unggul dan akan berkembang dalam kehidupan dunia dan akhirat.</li>
+      </ul>
+    </section>
+
+    <section class="px-6 py-20 bg-gray-100 text-center">
+      <!-- Budaya Mutu 5C -->
+      <h2 class="text-3xl font-bold mb-8">Budaya Mutu 5C</h2>
+      <p class="text-lg max-w-2xl mx-auto text-gray-700">Kami menerapkan pendekatan 5C dalam seluruh proses pembelajaran:</p>
+      <ul class="list-disc text-lg max-w-2xl mx-auto text-gray-700 space-y-2 mt-4 text-justify">
+        <li><strong>Critical Thinking (Berpikir Kritis):</strong> Mendorong siswa untuk berpikir analitis dan mengambil keputusan berdasarkan prinsip keilmuan.</li>
+        <li><strong>Creativity (Kreativitas):</strong> Menumbuhkan potensi inovasi dalam kerangka khitah ilmiah.</li>
+        <li><strong>Collaboration (Kolaborasi):</strong> Membangun kerja sama dan ukhuwah Islamiyah.</li>
+        <li><strong>Communication (Komunikasi):</strong> Melatih siswa untuk menyampaikan gagasan dengan adab dan kejujuran.</li>
+        <li><strong>Character (Karakter):</strong> Membangun pribadi yang mulia sebagai cerminan keilmuan.</li>
+      </ul>
+    </section>
+
+    <section class="px-6 py-20 bg-gray-100 text-center">
+      <!-- Nilai-Nilai Kami -->
+      <h2 class="text-3xl font-bold mb-8">Nilai-Nilai Kami</h2>
+      <p class="text-lg max-w-2xl mx-auto text-gray-700">Kami percaya bahwa pendidikan bukan hanya soal akademik, tapi juga soal makna kehidupan. Oleh karena itu, kami menjunjung tinggi prinsip:</p>
+      <ul class="list-disc px-12 md:px-32 lg:px-32 text-lg max-w-2xl mx-auto text-gray-700 space-y-2 mt-4 text-justify">
+        <li><strong>Inklusif:</strong> Pendidikan untuk semua (inklusi)</li>
+        <li><strong>Kualitas:</strong> Pendidikan yang bermutu (ramah anak)</li>
+        <li><strong>Islamic:</strong> Pendidikan Islami dan spiritual</li>
+        <li><strong>Berpikir Kritis:</strong> Mengajarkan berpikir secara kritis dan analitis</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[#453B3A] text-white">
+      <div class="max-w-7xl mx-auto px-12 py-8 flex flex-col md:flex-row md:justify-between md:items-center gap-8">
+
+        <!-- Logo -->
+        <div class="flex justify-center md:justify-start mb-4 md:mb-0">
+          <img src="img/Logo.png" alt="Logo PKBM" class="w-28 h-28 object-contain">
+        </div>
+
+        <!-- Alamat dan Kontak -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="font-bold mb-2">Alamat dan Kontak</h3>
+          <ul class="space-y-1 text-sm text-center md:text-left">
+            <li>Jl. KI Anwar Mangku, Lrg Sunia No. 120 RT 036 RW 013, Kel. Plaju Ulu, Palembang</li>
+            <li>WhatsApp Admin: (+62)813-7921-9322</li>
+            <li>pkbmccendekia@gmail.com</li>
+          </ul>
+        </div>
+
+        <!-- Ikuti Kami di Sosial Media -->
+        <div class="flex flex-col items-center md:items-start">
+          <h3 class="font-bold mb-2">Ikuti Kami di Sosial Media</h3>
+          
+          <div class="flex space-x-4 text-2xl">
+            <a href="https://instagram.com/dzak1ng" class="hover:bg-black first:mr-0"><img src="img/icon/instagram.png" alt="Instagram" class="w-6 h-6"></a>
+            <a href="https://instagram.com/dzak1ng" class="hover:bg-black"><img src="img/icon/youtube.png" alt="YouTube" class="w-6 h-6"></a>
+            <a href="https://instagram.com/dzak1ng" class="hover:bg-black"><img src="img/icon/x.png" alt="Twitter" class="w-6 h-6"></a>
+            <a href="https://instagram.com/dzak1ng" class="hover:bg-black"><img src="img/icon/linkedin.png" alt="LinkedIn" class="w-6 h-6"></a>
+            <a href="https://instagram.com/dzak1ng" class="hover:bg-black"><img src="img/icon/tiktok.png" alt="TikTok" class="w-6 h-6"></a>
+            <a href="https://instagram.com/dzak1ng" class="hover:bg-black"><img src="img/icon/facebook.png" alt="Facebook" class="w-6 h-6"></a>
+          </div>
+
+          <a href="https://wa.me/6281379219322?text=Halo%2C%20saya%20ingin%20bertanya%20mengenai%20PKBM%20MC%20CENDEKIA" 
+          class="bg-[#ffffff] text-[#6c564c] font-semibold py-2 px-6 rounded-xl hover:bg-orange-200 transition duration-300 ease-in-out mt-4">
+          Klik Untuk Chat Admin
+            </a>
+        </div>
+
+      </div>
+
+      <!-- Copyright -->
+      <div class="bg-black text-center py-3 text-sm">
+        © PKBM MC CENDEKIA 2025
+      </div>
+    </footer>
+
+    <!-- JavaScript for Mobile Menu Toggle -->
+
+    <script>
+      const toggleBtn = document.getElementById('menu-toggle');
+      const mobileMenu = document.getElementById('mobile-menu');
+
+      toggleBtn.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+      });
+    </script>
+  </body>
+</html>
